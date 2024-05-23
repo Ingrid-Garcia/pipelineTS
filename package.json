@@ -6,7 +6,11 @@
   "scripts": {
     "build": "tsc",
     "start": "node -r dotenv/config dist/index.js",
+<<<<<<< HEAD
     "build:start": "tsc && node -r dotenv/config dist/index.js"
+=======
+    "build:start": "tsc && node -r dotenv/config dist/index.j"
+>>>>>>> 4663778176500195074bd5aa382ae5a913e24350
   },
   "keywords": [],
   "author": "",
