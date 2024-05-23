@@ -11,7 +11,15 @@ const VideojuegoModel = dynamodb.define('videojuego',{
         Plataforma: joi.string().required(),
         Premios: joi.number().required(),
     },
-    tableName: `Videojuego`,
+    tableName: 'Videojuego',
+
+    
 });
+
+dynamodb.createTables((err)=>{
+    if(err)
+        return console.log(err);
+    console.log('Tabla creada exitosamente')
+})
 
 export default VideojuegoModel;

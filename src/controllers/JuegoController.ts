@@ -1,7 +1,7 @@
 import  {Request, Response} from "express";
 import AbstractController from "./AbstractController";
-import db from "../models";
-//import DepartamentoModel from "../modelsNOSQL/departamentoNOSQL";
+import Videojuego from "../modelNOSQL/videojuego"
+
 
 class JuegoController extends AbstractController{
     private static _instance: JuegoController;
@@ -13,7 +13,7 @@ class JuegoController extends AbstractController{
     }
     
     protected initRoutes(): void {
-        this.router.get('/crearJuego',this.postCrearJuego.bind(this)); 
+        this.router.post('/crearJuego',this.postCrearJuego.bind(this)); 
         this.router.get('/consultarJuego', this.getConsultarJuego.bind(this));
     }
 
@@ -42,4 +42,4 @@ class JuegoController extends AbstractController{
     
 }
 
-export default MascotaController;
+export default JuegoController;

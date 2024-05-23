@@ -1,7 +1,7 @@
 import  {Request, Response} from "express";
 import AbstractController from "./AbstractController";
 import db from "../models";
-//import DepartamentoModel from "../modelsNOSQL/departamentoNOSQL";
+
 
 class MascotaController extends AbstractController{
     private static _instance: MascotaController;
@@ -13,7 +13,7 @@ class MascotaController extends AbstractController{
     }
     
     protected initRoutes(): void {
-        this.router.get('/crearMascota',this.postCrearMascota.bind(this)); 
+        this.router.post('/crearMascota',this.postCrearMascota.bind(this)); 
         this.router.get('/consultarMascota', this.getconsultarMascota.bind(this));
     }
 
