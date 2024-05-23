@@ -11,7 +11,7 @@ const VideojuegoModel = dynamodb.define('videojuego',{
         Plataforma: joi.string().required(),
         Premios: joi.number().required(),
     },
-    tableName: `Videojuego${PREFIX_NAME}`,
+    tableName: `Videojuego`,
 });
 
 export default VideojuegoModel;
