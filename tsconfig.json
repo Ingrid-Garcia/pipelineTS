@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["ES2016"],
+    "module": "commonjs",
+    "rootDir": "./src", // Update the rootDir property to the correct path where all the source files are located.
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
+ 
